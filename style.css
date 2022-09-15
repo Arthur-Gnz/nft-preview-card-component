@@ -1,0 +1,112 @@
+:root{
+   --soft-blue: hsl(215, 51%, 70%);
+   --cyan: hsl(178, 100%, 50%);
+   --very-dark-blue-main: hsl(217, 54%, 11%);
+   --very-dark-blue-card: hsl(216, 50%, 16%);
+}
+
+*{
+   box-sizing: border-box;
+}
+
+body{
+   margin: 0;
+   background-color: var(--very-dark-blue-main);
+   font-size: 18px;
+   color: var(--soft-blue);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-family: Outfit;
+   font-weight: 300;
+   height: 100vh;
+}
+@font-face {
+   font-family: Outfit;
+   src: url('fonts/Outfit-VariableFont_wght.ttf');
+}
+main{
+   border-radius: 4%;
+   min-height: 36rem;
+   width: 21rem;
+   background-color: var(--very-dark-blue-card);
+   padding: 1.5rem;
+}
+
+img{
+   display: block;
+   max-width: 100%;
+   object-fit: cover;
+}
+.image-principal{
+   border-radius: 4%;
+}
+
+.image-principal>img{
+   border-radius: 4%;
+}
+
+.image-principal>img:hover{
+   filter: opacity(0.4) ;
+}
+
+.image-principal:hover{
+   background-color: var(--cyan);
+   background-image: url('images/icon-view.svg');
+   background-repeat: no-repeat;
+   background-position: center;
+   backface-visibility: visible;
+   cursor: pointer;
+}
+
+h3{
+   color: white;
+   font-weight: 400;
+}
+
+h3:hover{
+   color: var(--cyan);
+   cursor: pointer;
+}
+
+.cost{
+   display: inline-block;
+}
+.cost>span{
+   color: var(--cyan);
+   font-weight: 300;
+}
+
+hr{
+   border:1px groove var(--soft-blue);
+}
+
+.time{
+   display: inline-block;
+   float: right;
+}
+.time>img , .cost>img{
+   margin-top: .2rem;
+}
+
+.creation{
+   vertical-align: middle;
+}
+.creation>p>span{
+   color: white;
+}
+.creation>img{
+   max-width: 2rem;
+   border-radius: 50%;
+   border: 1px solid white;
+   margin-top: -.3rem;
+}
+
+.attribution { 
+   font-size: 11px; 
+   text-align: center; 
+   color: white;
+}
+
+.attribution a { color: hsl(228, 45%, 44%); }
